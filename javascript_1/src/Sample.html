@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function sexChange1(){
+	//変数radioに、nodeインターフェース「Element」を使い、フォームのnameの中身をgetしている。
+	radio = document.getElementsByName('sex');
+
+	//条件分岐 radio[0]は配列なので男をチェックしていた場合。
+	if(radio[0].checked){
+		//男を表示させ、女は非表示。
+		document.getElementById('men').style.display = "";
+		document.getElementById('women').style.display = "none";
+	//radio[1]は女なので、女がチェックされていた場合。
+	}else if(radio[1].checked){
+		//女を表示させ、男は非表示。
+		document.getElementById('men').style.display = "none";
+		document.getElementById('women').style.display = "";
+	}
+}
+
+//選択を保持させる。　これが無ければ男女両方表示されてしまう。
+window.onload = sexChange1;
+
+
+</script>
+</head>
+<body>
+	<form>
+		<p>
+			<!-- name属性を使い、値(sex)を持たせる。 -->
+			性別：<input type="radio" name="sex" value="男" onclick="sexChange1()"
+				checked="checked">男
+				<input type="radio" name="sex" value="女"
+				onclick="sexChange1()">女
+		</p>
+		<!-- id属性を使い、値(men)を持たせる。 -->
+		<p id="men">
+		<br> 〇〇について（男性用）：<br>
+			<textarea required></textarea>
+		</p>
+		<!-- id属性を使い、値(women)を持たせる。 -->
+		<p id="women">
+		<br> 〇〇について（女性用）：<br>
+			<textarea required></textarea>
+		</p>
+	</form>
+</body>
+</html>

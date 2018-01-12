@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="data">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/rails_3/tweet_app/vendor/bundler/ruby/2.3.0/gems/rubyzip-1.2.1/test/data/zip64-sample.zip!/" />
+      <root url="jar://$PROJECT_DIR$/rails_3/tweet_app/vendor/bundler/ruby/2.3.0/gems/rubyzip-1.2.1/test/data/ntfs.zip!/" />
+      <root url="jar://$PROJECT_DIR$/rails_3/tweet_app/vendor/bundler/ruby/2.3.0/gems/rubyzip-1.2.1/test/data/rubycode.zip!/" />
+      <root url="jar://$PROJECT_DIR$/rails_3/tweet_app/vendor/bundler/ruby/2.3.0/gems/rubyzip-1.2.1/test/data/WarnInvalidDate.zip!/" />
+      <root url="jar://$PROJECT_DIR$/rails_3/tweet_app/vendor/bundler/ruby/2.3.0/gems/rubyzip-1.2.1/test/data/oddExtraField.zip!/" />
+      <root url="jar://$PROJECT_DIR$/rails_3/tweet_app/vendor/bundler/ruby/2.3.0/gems/rubyzip-1.2.1/test/data/zipWithDirs.zip!/" />
+      <root url="jar://$PROJECT_DIR$/rails_3/tweet_app/vendor/bundler/ruby/2.3.0/gems/rubyzip-1.2.1/test/data/rubycode2.zip!/" />
+      <root url="jar://$PROJECT_DIR$/rails_3/tweet_app/vendor/bundler/ruby/2.3.0/gems/rubyzip-1.2.1/test/data/globTest.zip!/" />
+      <root url="jar://$PROJECT_DIR$/rails_3/tweet_app/vendor/bundler/ruby/2.3.0/gems/rubyzip-1.2.1/test/data/zipWithEncryption.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

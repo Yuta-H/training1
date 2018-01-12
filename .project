@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>training</name>
+	<comment></comment>
+	<projects>
+		<project>java_1</project>
+		<project>java_2</project>
+		<project>java_3</project>
+		<project>java_4</project>
+		<project>java_5</project>
+		<project>javascript_1</project>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+	</natures>
+</projectDescription>

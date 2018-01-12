@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding: 180px 0 100px;
+  background-image: url("https://prog-8.com/images/html/advanced/top.png");
+  background-size: cover;
+  color: white;
+  text-align: center;
+
+  h1 {
+    opacity: 0.7;
+    font-size: 45px;
+    letter-spacing: 5px;
+  }
+
+  p {
+    opacity: 0.7;
+  }
+}
+
+.btn-wrapper {
+  margin: 20px 0;
+
+  p {
+    margin: 10px 0;
+  }
+}
+
+.btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+$menber_color:(
+signup:#239b76,
+facebook:#3b5998,
+twitter:#55acee,
+);
+
+@each $icon, $color in $menber_color{
+ .#{$icon}{
+   background-color: $color;
+ }
+}
+
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.header-left {
+  float: left;
+}
+
+.logo {
+  width: 124px;
+  margin-top: 20px;
+}
+
+.header-right {
+  float: right;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.5s;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+}
+
+.lesson-wrapper {
+  height: 500px;
+  padding-bottom: 80px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.lesson {
+  float: left;
+  width: 25%;
+  & .lesson-icon {
+    position: relative;
+    p {
+      position: absolute;
+      top: 70px;
+      width: 100%;
+      color: white;
+    }
+  }
+}
+
+.txt-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #b3aeb5;
+}
+
+
+
+
+
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.message {
+  padding: 15px 40px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0 7px #1a7940;
+
+  &:active {
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+  }
+}
+
+.heading {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: #5f5d60;
+
+  h2 {
+    font-weight: normal;
+  }
+
+  h3 {
+    font-weight: normal;
+  }
+}
+
+footer {
+  padding-top: 30px;
+
+  img {
+    width: 125px;
+  }
+
+  p {
+    color: #b3aeb5;
+  }
+}
