@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+
+</head>
+<body>
+
+<button class="btn textLocalDateTime">DateTimeFormatterを使って変換:</button>
+
+<button class="btn jsonLocalDateTime">Jacksonを使ってJSON変換:</button>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+    $(function () {
+        $('.textLocalDateTime').click(function (time) {
+            $.ajax({
+                type: "post",
+                url: "/text-local-date-time",
+                success: function(otdata, dataType) {
+                    $(".textLocalDateTime").text(otdata);
+                    console.log(otdata);
+                },
+                error: function(XMLHttpRequest, textStatus, errorThrown) {
+                    alert(XMLHttpRequest + ":" + textStatus + ":" + errorThrown);
+                }
+            });
+        });
+    });
+$(function () {
+    $('.jsonLocalDateTime').click(function(time){
+        $.ajax({
+            type: "post",
+            url: "/json-local-date-time",
+            success: function (otdata, dataType) {
+                $(".jsonLocalDateTime").text(otdata[0].jsonLocalDateTime);
+
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                alert(XMLHttpRequest + ":" + textStatus + ":" + errorThrown);
+            }
+        })
+    });
+})
+
+</script>
+</body>
+</html>
